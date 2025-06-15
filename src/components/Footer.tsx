@@ -4,7 +4,7 @@ import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
-export function Footer() {
+export default function Footer() {
     return (
         <footer className="bg-gray-900 text-gray-300">
             <div className="mx-auto max-w-6xl px-4 py-12">
