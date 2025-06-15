@@ -1,11 +1,12 @@
 [build]
-  command = "npm install --legacy-peer-deps && npm run build"
+  command = "mise settings add idiomatic_version_file_enable_tools node && npm install --legacy-peer-deps && npm run build"
   publish = ".next"
 
 [build.environment]
   NEXT_TELEMETRY_DISABLED = "1"
   NODE_VERSION = "16.20.2"
   NPM_FLAGS = "--legacy-peer-deps"
+  MISE_SETTINGS = "idiomatic_version_file_enable_tools=node"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs" 
