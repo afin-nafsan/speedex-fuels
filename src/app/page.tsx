@@ -3,7 +3,7 @@
 import React from 'react';
 import { HeroSection } from '@/components/hero-section-3';
 import Navbar from '@/components/Navbar';
-import { Footer } from '@/components/Footer';
+import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { 
     BuildingOffice2Icon, 
