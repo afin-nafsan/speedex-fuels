@@ -1718,6 +1718,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
+    padding: 0 1rem;
 }
 
 .cta-text {
@@ -1741,7 +1742,8 @@ h1, h2, h3, h4, h5, h6 {
 .cta-features {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 
@@ -1750,6 +1752,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    text-align: center;
+    min-width: 150px;
 }
 
 .cta-feature i {
