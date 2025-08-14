@@ -4,75 +4,217 @@
 
     // Search data - this contains all searchable content from the website
     const searchData = [
+        // Main Products from products.html
         {
-            title: "Diesel Fuel",
-            description: "High-quality diesel fuel for transportation, industrial, and commercial applications",
-            keywords: ["diesel", "fuel", "transportation", "industrial", "commercial"],
-            url: "service.html#diesel",
+            title: "CRUDE OIL",
+            description: "Premium crude oil supply for refineries and processing facilities worldwide",
+            keywords: ["crude oil", "refinery", "processing", "petroleum", "oil"],
+            url: "products.html",
             category: "Products"
         },
         {
-            title: "Crude Oil",
-            description: "Premium crude oil supply for refineries and processing facilities",
-            keywords: ["crude oil", "refinery", "processing", "petroleum"],
-            url: "service.html#crude-oil",
+            title: "LPG",
+            description: "Liquefied Petroleum Gas for domestic and industrial applications",
+            keywords: ["lpg", "liquefied petroleum gas", "gas", "domestic", "industrial"],
+            url: "products.html",
             category: "Products"
         },
         {
-            title: "Gasoline",
+            title: "LNG",
+            description: "Liquefied Natural Gas for power generation and transportation",
+            keywords: ["lng", "liquefied natural gas", "natural gas", "power", "transportation"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "CNG",
+            description: "Compressed Natural Gas for automotive and industrial use",
+            keywords: ["cng", "compressed natural gas", "automotive", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "GASOLINE",
             description: "Premium gasoline fuels for automotive and light vehicle applications",
-            keywords: ["gasoline", "automotive", "vehicle", "fuel"],
-            url: "service.html#gasoline",
+            keywords: ["gasoline", "automotive", "vehicle", "fuel", "petrol"],
+            url: "products.html",
             category: "Products"
         },
         {
-            title: "Aviation/Jet Fuel",
-            description: "Specialized aviation fuels meeting strict international standards",
-            keywords: ["aviation", "jet fuel", "aircraft", "military", "commercial"],
-            url: "service.html#aviation",
+            title: "DIESEL",
+            description: "High-quality diesel fuel for transportation and industrial applications",
+            keywords: ["diesel", "fuel", "transportation", "industrial", "commercial"],
+            url: "products.html",
             category: "Products"
         },
         {
-            title: "Butane",
-            description: "High-purity butane gas for industrial applications and heating",
-            keywords: ["butane", "gas", "industrial", "heating", "fuel"],
-            url: "service.html#butane",
+            title: "BUTANE",
+            description: "High-purity butane gas for industrial and commercial applications",
+            keywords: ["butane", "gas", "industrial", "commercial", "fuel"],
+            url: "products.html",
             category: "Products"
         },
         {
-            title: "Kerosene",
+            title: "FUEL OIL / BUNKER OIL",
+            description: "Marine fuel oil and bunker oil for shipping and maritime operations",
+            keywords: ["fuel oil", "bunker oil", "marine", "shipping", "maritime"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "AVIATION FUEL / JET FUEL",
+            description: "Specialized aviation fuels for commercial and military aircraft",
+            keywords: ["aviation fuel", "jet fuel", "aircraft", "military", "commercial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "KEROSENE",
             description: "Premium kerosene for heating, lighting, and industrial applications",
             keywords: ["kerosene", "heating", "lighting", "industrial"],
-            url: "service.html#kerosene",
+            url: "products.html",
             category: "Products"
         },
         {
+            title: "PROPANE",
+            description: "High-quality propane for heating, cooking, and industrial processes",
+            keywords: ["propane", "heating", "cooking", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "MICROCRYSTALLINE WAX",
+            description: "Specialized wax products for industrial and commercial applications",
+            keywords: ["microcrystalline wax", "wax", "industrial", "commercial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "NAPALM",
+            description: "Specialized fuel gel for industrial and military applications",
+            keywords: ["napalm", "fuel gel", "industrial", "military"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "NAPHTHALENE",
+            description: "Chemical compound for industrial and manufacturing processes",
+            keywords: ["naphthalene", "chemical", "industrial", "manufacturing"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "PARAFFIN WAX",
+            description: "High-quality paraffin wax for various industrial applications",
+            keywords: ["paraffin wax", "wax", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "SULPHUR",
+            description: "Elemental sulphur for chemical and industrial applications",
+            keywords: ["sulphur", "sulfur", "chemical", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "HEATING OIL / FURNACE OIL",
+            description: "Heating and furnace oil for residential and commercial heating",
+            keywords: ["heating oil", "furnace oil", "heating", "residential", "commercial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "LUBRICANTS",
+            description: "High-performance lubricants for machinery and equipment",
+            keywords: ["lubricants", "lubrication", "machinery", "equipment"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "LIGHT FUEL",
+            description: "Light fuel oils for specialized industrial applications",
+            keywords: ["light fuel", "fuel oil", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "PETROLEUM WAX",
+            description: "Petroleum wax products for various industrial applications",
+            keywords: ["petroleum wax", "wax", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "PETROLEUM JELLY",
+            description: "High-quality petroleum jelly for medical and industrial use",
+            keywords: ["petroleum jelly", "medical", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "PLASTIC GRANULES",
+            description: "Plastic granules for manufacturing and industrial processes",
+            keywords: ["plastic granules", "manufacturing", "industrial"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "PETROLEUM COKE",
+            description: "Petroleum coke for industrial fuel and manufacturing applications",
+            keywords: ["petroleum coke", "coke", "industrial", "fuel"],
+            url: "products.html",
+            category: "Products"
+        },
+        {
+            title: "SLACK WAX",
+            description: "Slack wax for industrial and commercial applications",
+            keywords: ["slack wax", "wax", "industrial", "commercial"],
+            url: "products.html",
+            category: "Products"
+        },
+        // Company Information
+        {
             title: "About SpeedEX",
-            description: "Responsible supplier of international quality refined petroleum products",
-            keywords: ["about", "company", "supplier", "petroleum", "quality"],
+            description: "SpeedEX Fuel Trading LLC - Your reliable partner in global fuel supply",
+            keywords: ["about", "company", "supplier", "petroleum", "quality", "speedex"],
+            url: "about.html",
+            category: "Company"
+        },
+        {
+            title: "MyFuel Company",
+            description: "On-demand diesel delivery directly at your doorstep",
+            keywords: ["myfuel", "doorstep delivery", "on-demand", "diesel"],
             url: "about.html",
             category: "Company"
         },
         {
             title: "Contact Us",
             description: "Get in touch with SpeedEX for your fuel trading needs",
-            keywords: ["contact", "get quote", "inquiry", "support"],
+            keywords: ["contact", "get quote", "inquiry", "support", "phone", "email"],
             url: "contact.html",
             category: "Contact"
         },
         {
-            title: "Our Operations",
-            description: "Global fuel trading operations and logistics",
-            keywords: ["operations", "logistics", "global", "trading"],
-            url: "project.html",
-            category: "Operations"
+            title: "Our Features",
+            description: "Premium fuel quality, fast global delivery, and environmental responsibility",
+            keywords: ["features", "quality", "delivery", "environmental", "responsibility"],
+            url: "feature.html",
+            category: "Features"
         },
         {
-            title: "International Quality",
-            description: "Meeting international standards for refined petroleum products",
-            keywords: ["international", "quality", "standards", "certification"],
-            url: "index.html#about",
-            category: "Quality"
+            title: "Client Testimonials",
+            description: "Reviews from satisfied customers across various industries",
+            keywords: ["testimonials", "reviews", "customers", "feedback"],
+            url: "testimonial.html",
+            category: "Testimonials"
+        },
+        {
+            title: "News & Updates",
+            description: "Latest news and industry updates from SpeedEX",
+            keywords: ["news", "updates", "blog", "industry"],
+            url: "blog.html",
+            category: "News"
         },
         {
             title: "24/7 Global Operations",
@@ -82,11 +224,25 @@
             category: "Operations"
         },
         {
+            title: "International Quality Standards",
+            description: "Meeting international standards for refined petroleum products",
+            keywords: ["international", "quality", "standards", "certification"],
+            url: "index.html#about",
+            category: "Quality"
+        },
+        {
             title: "Fuel Trading Services",
             description: "Comprehensive fuel trading and supply chain solutions",
             keywords: ["trading", "services", "supply chain", "solutions"],
             url: "service.html",
             category: "Services"
+        },
+        {
+            title: "All Products",
+            description: "Complete portfolio of 25 petroleum products",
+            keywords: ["all products", "portfolio", "petroleum", "complete"],
+            url: "products.html",
+            category: "Products"
         }
     ];
 
@@ -190,7 +346,7 @@
             resultsList.append(`
                 <div class="alert alert-info">
                     <i class="fas fa-info-circle me-2"></i>
-                    No results found. Try searching for: diesel, gasoline, aviation fuel, crude oil, butane, kerosene
+                    No results found. Try searching for: diesel, gasoline, aviation fuel, crude oil, lpg, lng, lubricants, or any of our 25 petroleum products
                 </div>
             `);
         } else {
