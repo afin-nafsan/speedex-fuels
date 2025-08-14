@@ -1,0 +1,19 @@
+SPEEDEX LOGO PLACEHOLDER
+
+To add your SpeedEX logo:
+
+1. Save your SpeedEX logo image file as "speedex-logo.png" in this img/ directory
+2. Recommended logo specifications:
+   - Format: PNG (with transparency) or JPG
+   - Size: 200-300px width, maintain aspect ratio
+   - Background: Transparent or white background
+   - Resolution: High quality (300 DPI recommended)
+
+3. Once you add the logo file, uncomment the logo image line in the HTML files:
+   - In index.html (and other HTML files), find this line:
+     <!-- <img src="img/speedex-logo.png" alt="SpeedEX Logo"> -->
+   - Remove the <!-- --> comment markers to display the logo
+
+4. You may also want to adjust the CSS styling for the logo in css/style.css if needed
+
+The current setup uses a text-based logo with a gas pump icon, but you can replace this with your actual logo image.

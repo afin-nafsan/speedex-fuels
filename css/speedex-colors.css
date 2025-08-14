@@ -1,0 +1,212 @@
+/* SpeedEX Brand Colors - Override Bootstrap Variables */
+:root {
+    --bs-primary: #0052CC;    /* SpeedEX Blue */
+    --bs-secondary: #00A651;  /* SpeedEX Green */
+    --bs-success: #00A651;    /* Use green for success */
+    --bs-info: #0052CC;       /* Use blue for info */
+    --bs-warning: #FFA500;    /* Keep orange for warning */
+    --bs-danger: #DC3545;     /* Keep red for danger */
+    --bs-light: #F8F9FA;      /* Light gray */
+    --bs-dark: #212529;       /* Dark gray */
+    --bs-white: #FFFFFF;      /* White */
+    --bs-body: #7D7D7D;       /* Body text color */
+}
+
+/* Additional SpeedEX specific color classes */
+.speedex-blue {
+    color: #0052CC !important;
+}
+
+.speedex-green {
+    color: #00A651 !important;
+}
+
+.bg-speedex-blue {
+    background-color: #0052CC !important;
+}
+
+.bg-speedex-green {
+    background-color: #00A651 !important;
+}
+
+.border-speedex-blue {
+    border-color: #0052CC !important;
+}
+
+.border-speedex-green {
+    border-color: #00A651 !important;
+}
+
+/* Gradient backgrounds */
+.bg-gradient-speedex {
+    background: linear-gradient(135deg, #0052CC 0%, #00A651 100%) !important;
+}
+
+.bg-gradient-blue-green {
+    background: linear-gradient(135deg, #0052CC 0%, #00A651 100%) !important;
+}
+
+/* Button variations */
+.btn-speedex-blue {
+    background-color: #0052CC;
+    border-color: #0052CC;
+    color: white;
+}
+
+.btn-speedex-blue:hover {
+    background-color: #0047B3;
+    border-color: #0047B3;
+    color: white;
+}
+
+.btn-speedex-green {
+    background-color: #00A651;
+    border-color: #00A651;
+    color: white;
+}
+
+.btn-speedex-green:hover {
+    background-color: #008F47;
+    border-color: #008F47;
+    color: white;
+}
+
+/* Text color utilities */
+.text-speedex-blue {
+    color: #0052CC !important;
+}
+
+.text-speedex-green {
+    color: #00A651 !important;
+}
+
+/* Link colors */
+a {
+    color: #0052CC;
+}
+
+a:hover {
+    color: #0047B3;
+}
+
+/* Focus states */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    border-color: #0052CC;
+    box-shadow: 0 0 0 0.25rem rgba(0, 82, 204, 0.25);
+}
+
+/* Active states */
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #0047B3 !important;
+    border-color: #0047B3 !important;
+}
+
+.btn-secondary:active,
+.btn-secondary.active {
+    background-color: #008F47 !important;
+    border-color: #008F47 !important;
+}
+
+/* Comprehensive Button Styling - Ensure all buttons use SpeedEX green */
+.btn-primary {
+    background-color: #00A651 !important;
+    border-color: #00A651 !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #008F47 !important;
+    border-color: #008F47 !important;
+    color: white !important;
+}
+
+.btn-secondary {
+    background-color: #0052CC !important;
+    border-color: #0052CC !important;
+    color: white !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #0047B3 !important;
+    border-color: #0047B3 !important;
+    color: white !important;
+}
+
+/* Override any specific button classes that might be using old colors */
+.btn.btn-primary {
+    background-color: #00A651 !important;
+    border-color: #00A651 !important;
+    color: white !important;
+}
+
+.btn.btn-primary:hover {
+    background-color: #008F47 !important;
+    border-color: #008F47 !important;
+    color: white !important;
+}
+
+.btn.btn-secondary {
+    background-color: #0052CC !important;
+    border-color: #0052CC !important;
+    color: white !important;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #0047B3 !important;
+    border-color: #0047B3 !important;
+    color: white !important;
+}
+
+/* Social media buttons and other specific button types */
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+    background-color: #00A651 !important;
+    border-color: #00A651 !important;
+    color: white !important;
+}
+
+.btn-square:hover,
+.btn-sm-square:hover,
+.btn-md-square:hover,
+.btn-lg-square:hover,
+.btn-xl-square:hover {
+    background-color: #008F47 !important;
+    border-color: #008F47 !important;
+    color: white !important;
+}
+
+/* Counter button specific styling */
+.counter-btn {
+    background-color: #00A651 !important;
+    border-color: #00A651 !important;
+    color: white !important;
+}
+
+.counter-btn:hover {
+    background-color: #008F47 !important;
+    border-color: #008F47 !important;
+    color: white !important;
+}
+
+/* Back to top button */
+.back-to-top {
+    background-color: #00A651 !important;
+    border-color: #00A651 !important;
+    color: white !important;
+}
+
+.back-to-top:hover {
+    background-color: #008F47 !important;
+    border-color: #008F47 !important;
+    color: white !important;
+}
