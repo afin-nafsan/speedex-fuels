@@ -1,11 +1,11 @@
 /* SpeedEX Brand Colors - Override Bootstrap Variables */
 :root {
-    --bs-primary: #0052CC;    /* SpeedEX Blue */
-    --bs-secondary: #00A651;  /* SpeedEX Green */
-    --bs-success: #00A651;    /* Use green for success */
-    --bs-info: #0052CC;       /* Use blue for info */
-    --bs-warning: #FFA500;    /* Keep orange for warning */
-    --bs-danger: #DC3545;     /* Keep red for danger */
+    --bs-primary: rgba(42,180,114,255);    /* New SpeedEX Green */
+    --bs-secondary: rgba(32,140,94,255);   /* Darker green for secondary */
+    --bs-success: rgba(42,180,114,255);    /* Use green for success */
+    --bs-info: rgba(52,190,124,255);       /* Lighter green for info */
+    --bs-warning: #6C757D;    /* Use gray for warning instead of orange */
+    --bs-danger: #495057;     /* Use dark gray for danger instead of red */
     --bs-light: #F8F9FA;      /* Light gray */
     --bs-dark: #212529;       /* Dark gray */
     --bs-white: #FFFFFF;      /* White */
@@ -14,153 +14,153 @@
 
 /* Additional SpeedEX specific color classes */
 .speedex-blue {
-    color: #0052CC !important;
+    color: rgba(42,180,114,255) !important;
 }
 
 .speedex-green {
-    color: #00A651 !important;
+    color: rgba(42,180,114,255) !important;
 }
 
 .bg-speedex-blue {
-    background-color: #0052CC !important;
+    background-color: rgba(42,180,114,255) !important;
 }
 
 .bg-speedex-green {
-    background-color: #00A651 !important;
+    background-color: rgba(42,180,114,255) !important;
 }
 
 .border-speedex-blue {
-    border-color: #0052CC !important;
+    border-color: rgba(42,180,114,255) !important;
 }
 
 .border-speedex-green {
-    border-color: #00A651 !important;
+    border-color: rgba(42,180,114,255) !important;
 }
 
 /* Gradient backgrounds */
 .bg-gradient-speedex {
-    background: linear-gradient(135deg, #0052CC 0%, #00A651 100%) !important;
+    background: linear-gradient(135deg, rgba(42,180,114,255) 0%, rgba(32,140,94,255) 100%) !important;
 }
 
 .bg-gradient-blue-green {
-    background: linear-gradient(135deg, #0052CC 0%, #00A651 100%) !important;
+    background: linear-gradient(135deg, rgba(42,180,114,255) 0%, rgba(32,140,94,255) 100%) !important;
 }
 
 /* Button variations */
 .btn-speedex-blue {
-    background-color: #0052CC;
-    border-color: #0052CC;
+    background-color: rgba(42,180,114,255);
+    border-color: rgba(42,180,114,255);
     color: white;
 }
 
 .btn-speedex-blue:hover {
-    background-color: #0047B3;
-    border-color: #0047B3;
+    background-color: rgba(32,140,94,255);
+    border-color: rgba(32,140,94,255);
     color: white;
 }
 
 .btn-speedex-green {
-    background-color: #00A651;
-    border-color: #00A651;
+    background-color: rgba(42,180,114,255);
+    border-color: rgba(42,180,114,255);
     color: white;
 }
 
 .btn-speedex-green:hover {
-    background-color: #008F47;
-    border-color: #008F47;
+    background-color: rgba(32,140,94,255);
+    border-color: rgba(32,140,94,255);
     color: white;
 }
 
 /* Text color utilities */
 .text-speedex-blue {
-    color: #0052CC !important;
+    color: rgba(42,180,114,255) !important;
 }
 
 .text-speedex-green {
-    color: #00A651 !important;
+    color: rgba(42,180,114,255) !important;
 }
 
 /* Link colors */
 a {
-    color: #0052CC;
+    color: rgba(42,180,114,255);
 }
 
 a:hover {
-    color: #0047B3;
+    color: rgba(32,140,94,255);
 }
 
 /* Focus states */
 .btn:focus,
 .form-control:focus,
 .form-select:focus {
-    border-color: #0052CC;
-    box-shadow: 0 0 0 0.25rem rgba(0, 82, 204, 0.25);
+    border-color: rgba(42,180,114,255);
+    box-shadow: 0 0 0 0.25rem rgba(42,180,114,0.25);
 }
 
 /* Active states */
 .btn-primary:active,
 .btn-primary.active {
-    background-color: #0047B3 !important;
-    border-color: #0047B3 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
 }
 
 .btn-secondary:active,
 .btn-secondary.active {
-    background-color: #008F47 !important;
-    border-color: #008F47 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
 }
 
 /* Comprehensive Button Styling - Ensure all buttons use SpeedEX green */
 .btn-primary {
-    background-color: #00A651 !important;
-    border-color: #00A651 !important;
+    background-color: rgba(42,180,114,255) !important;
+    border-color: rgba(42,180,114,255) !important;
     color: white !important;
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background-color: #008F47 !important;
-    border-color: #008F47 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
 }
 
 .btn-secondary {
-    background-color: #0052CC !important;
-    border-color: #0052CC !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus,
 .btn-secondary:active {
-    background-color: #0047B3 !important;
-    border-color: #0047B3 !important;
+    background-color: rgba(22,120,84,255) !important;
+    border-color: rgba(22,120,84,255) !important;
     color: white !important;
 }
 
 /* Override any specific button classes that might be using old colors */
 .btn.btn-primary {
-    background-color: #00A651 !important;
-    border-color: #00A651 !important;
+    background-color: rgba(42,180,114,255) !important;
+    border-color: rgba(42,180,114,255) !important;
     color: white !important;
 }
 
 .btn.btn-primary:hover {
-    background-color: #008F47 !important;
-    border-color: #008F47 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
 }
 
 .btn.btn-secondary {
-    background-color: #0052CC !important;
-    border-color: #0052CC !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
 }
 
 .btn.btn-secondary:hover {
-    background-color: #0047B3 !important;
-    border-color: #0047B3 !important;
+    background-color: rgba(22,120,84,255) !important;
+    border-color: rgba(22,120,84,255) !important;
     color: white !important;
 }
 
@@ -170,8 +170,8 @@ a:hover {
 .btn-md-square,
 .btn-lg-square,
 .btn-xl-square {
-    background-color: #00A651 !important;
-    border-color: #00A651 !important;
+    background-color: rgba(42,180,114,255) !important;
+    border-color: rgba(42,180,114,255) !important;
     color: white !important;
 }
 
@@ -180,33 +180,128 @@ a:hover {
 .btn-md-square:hover,
 .btn-lg-square:hover,
 .btn-xl-square:hover {
-    background-color: #008F47 !important;
-    border-color: #008F47 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
 }
 
 /* Counter button specific styling */
 .counter-btn {
-    background-color: #00A651 !important;
-    border-color: #00A651 !important;
+    background-color: rgba(42,180,114,255) !important;
+    border-color: rgba(42,180,114,255) !important;
     color: white !important;
 }
 
 .counter-btn:hover {
-    background-color: #008F47 !important;
-    border-color: #008F47 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
 }
 
 /* Back to top button */
 .back-to-top {
-    background-color: #00A651 !important;
-    border-color: #00A651 !important;
+    background-color: rgba(42,180,114,255) !important;
+    border-color: rgba(42,180,114,255) !important;
     color: white !important;
 }
 
 .back-to-top:hover {
-    background-color: #008F47 !important;
-    border-color: #008F47 !important;
+    background-color: rgba(32,140,94,255) !important;
+    border-color: rgba(32,140,94,255) !important;
     color: white !important;
+}
+
+/* Override any remaining red and orange colors to black */
+.text-danger,
+.text-warning,
+.bg-danger,
+.bg-warning,
+.btn-danger,
+.btn-warning,
+.alert-danger,
+.alert-warning,
+.border-danger,
+.border-warning {
+    color: #000000 !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+/* Override any specific red/orange color values */
+[style*="red"],
+[style*="orange"],
+[style*="#ff"],
+[style*="#FF"],
+[style*="#dc3545"],
+[style*="#ffa500"],
+[style*="#ff0000"] {
+    color: #000000 !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+/* Override Bootstrap's default red and orange colors */
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.text-danger {
+    color: #000000 !important;
+}
+
+.text-warning {
+    color: #000000 !important;
+}
+
+.bg-danger {
+    background-color: #000000 !important;
+}
+
+.bg-warning {
+    background-color: #000000 !important;
+}
+
+.alert-danger {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.alert-warning {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* Override any remaining color references */
+* {
+    color: inherit;
+}
+
+/* Ensure no red or orange colors appear anywhere */
+*:not(.text-white):not(.text-light):not(.text-muted) {
+    color: #000000 !important;
+}
+
+/* Override any Bootstrap utility classes that might use red/orange */
+.badge-danger,
+.badge-warning,
+.badge.bg-danger,
+.badge.bg-warning {
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }

@@ -71,7 +71,7 @@
 }
 
 .btn.btn-primary:hover {
-    background: var(--bs-secondary);
+    background: rgba(42,180,114,255);
 }
 
 .btn.btn-secondary {
@@ -81,18 +81,60 @@
 }
 
 .btn.btn-secondary:hover {
-    background: var(--bs-primary);
+    background: rgba(42,180,114,255);
 }
 /*** Topbar Start ***/
 .topbar {
     padding: 2px 10px 2px 20px;
-    background: var(--bs-primary);
+    background: rgba(42,180,114,255);
 }
 /*** Topbar End ***/
 
 /*** Navbar ***/
 .sticky-top {
     transition: 1s;
+}
+
+/* Semi-transparent blur effect for navbar on scroll */
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar.scrolled .navbar-nav .nav-link {
+    color: var(--bs-dark) !important;
+}
+
+.navbar.scrolled .navbar-nav .nav-link:hover,
+.navbar.scrolled .navbar-nav .nav-link.active {
+    color: var(--bs-secondary) !important;
+}
+
+/* Default semi-transparent navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+.navbar.scrolled {
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar.scrolled .navbar-nav .nav-link {
+    color: var(--bs-dark) !important;
+}
+
+.navbar.scrolled .navbar-nav .nav-link:hover,
+.navbar.scrolled .navbar-nav .nav-link.active {
+    color: var(--bs-secondary) !important;
 }
 
 .navbar .navbar-nav .nav-item.nav-link,
@@ -254,7 +296,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(0, 82, 204, 0.7), rgba(0, 82, 204, 0.7)), url(../img/carousel-2.jpg);
+    background: linear-gradient(rgba(42, 180, 114, 0.7), rgba(42, 180, 114, 0.7)), url(../img/carousel-2.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,6 +308,22 @@
 }
 
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
+    color: var(--bs-white);
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item {
+    color: var(--bs-white);
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item.active {
+    color: var(--bs-white);
+}
+
+.bg-breadcrumb h1, .bg-breadcrumb h2, .bg-breadcrumb h3, .bg-breadcrumb h4, .bg-breadcrumb h5, .bg-breadcrumb h6 {
+    color: var(--bs-white);
+}
+
+.bg-breadcrumb p {
     color: var(--bs-white);
 }
 /*** Single Page Hero Header End ***/
@@ -365,7 +423,7 @@
 }
 
 .carousel .carousel-indicators li.active {
-    border: 10px solid #0052CC;
+    border: 10px solid rgba(42,180,114,255);
 }
 
 .carousel .carousel-control-prev,
@@ -377,7 +435,7 @@
     position: absolute;
     left: 0;
     padding: 25px 30px;
-    background: #0052CC;
+    background: rgba(42,180,114,255);
 
 }
 
@@ -385,7 +443,7 @@
     position: absolute;
     right: 0;
     padding: 25px 30px;
-    background: #0052CC;
+    background: rgba(42,180,114,255);
 
 }
 
@@ -571,7 +629,7 @@
 
 /*** Fact Counter ***/
 .counter {
-    background: linear-gradient(rgba(0, 82, 204, 0.9), rgba(0, 166, 81, 1)), url(../img/counter.jpg);
+    background: linear-gradient(rgba(42, 180, 114, 0.9), rgba(32, 140, 94, 1)), url(../img/counter.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -579,7 +637,7 @@
 
 .counter .counter-btn:hover {
     background: var(--bs-white);
-    color: var(--bs-secondary);
+    color: var(--bs-dark);
 }
 
 .counter .counter-box {
@@ -612,7 +670,7 @@
     margin-right: 20px;
     margin-bottom: 20px;
     background: var(--bs-white);
-    box-shadow: 20px 20px rgba(255, 94, 21, 1);
+    box-shadow: 20px 20px rgba(0, 0, 0, 0.3);
     z-index: 3;
 }
 
@@ -625,6 +683,7 @@
     text-align: center;
     background: var(--bs-primary);
     font-size: 30px;
+    color: var(--bs-white);
 }
 /*** Fact Counter ***/
 
@@ -788,7 +847,7 @@
     top: -58px;
     left: 50%;
     transform: translateX(-60px);
-    color: var(--bs-primary);
+    color: var(--bs-dark);
     padding: 5px 25px;
     border: 1px solid var(--bs-secondary);
     transition: 0.5s;
@@ -804,7 +863,7 @@
     top: -58px;
     left: 50%;
     transform: translateX(10px);
-    color: var(--bs-primary);
+    color: var(--bs-dark);
     padding: 5px 25px;
     border: 1px solid var(--bs-secondary);
     transition: 0.5s;
@@ -827,14 +886,14 @@
     height: 20px;
     margin-right: 15px;
     border: 1px solid var(--bs-secondary);
-    background: var(--bs-primary);
+    background: var(--bs-dark);
     transition: 0.5s;
 }
 
 .testimonial-carousel .owl-dots .owl-dot.active {
     width: 20px;
     height: 20px;
-    border: 1px solid var(--bs-primary);
+    border: 1px solid var(--bs-dark);
     background: var(--bs-secondary) !important;
     transition: 0.5s;
 }
@@ -919,24 +978,26 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 82, 204, 0.9), rgba(0, 82, 204, 1)), url(../img/footer-img.jpg);
+    background: linear-gradient(rgba(42, 180, 114, 0.9), rgba(42, 180, 114, 1)), url(../img/footer-img.jpg);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--bs-white);
     transition: 0.5s;
 }
 
 .footer .footer-item p {
     line-height: 35px;
+    color: var(--bs-white);
 }
 
 .footer .footer-item a:hover {
     letter-spacing: 1px;
-    color: var(--bs-secondary);
+    color: var(--bs-white);
+    opacity: 0.8;
 }
 
 .footer .footer-item .footer-btn a,
@@ -946,10 +1007,190 @@
 
 .footer .footer-item .footer-btn a:hover {
     background: var(--bs-white);
+    color: var(--bs-dark);
 }
 
 .footer .footer-item .footer-btn a:hover i {
-    color: var(--bs-primary) !important;
+    color: var(--bs-dark) !important;
+}
+
+/* Ensure all text in green containers is white */
+.topbar,
+.counter {
+    color: var(--bs-white);
+}
+
+.topbar a,
+.counter a {
+    color: var(--bs-white);
+}
+
+.topbar h1, .topbar h2, .topbar h3, .topbar h4, .topbar h5, .topbar h6,
+.counter h1, .counter h2, .counter h3, .counter h4, .counter h5, .counter h6 {
+    color: var(--bs-white);
+}
+
+/* Footer text colors to match topbar */
+.footer {
+    color: var(--bs-white) !important;
+}
+
+.footer a {
+    color: var(--bs-white) !important;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+    color: var(--bs-white) !important;
+}
+
+.footer p {
+    color: var(--bs-white) !important;
+}
+
+.footer .footer-item {
+    color: var(--bs-white) !important;
+}
+
+.footer .footer-item * {
+    color: var(--bs-white) !important;
+}
+
+/* Force footer text to be white - highest priority */
+.footer,
+.footer *,
+.footer a,
+.footer p,
+.footer h1,
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer h6,
+.footer .footer-item,
+.footer .footer-item *,
+.footer .footer-item a,
+.footer .footer-item p,
+.footer .footer-item h1,
+.footer .footer-item h2,
+.footer .footer-item h3,
+.footer .footer-item h4,
+.footer .footer-item h5,
+.footer .footer-item h6 {
+    color: #FFFFFF !important;
+}
+
+/* Copyright section text colors */
+.copyright,
+.copyright *,
+.copyright a,
+.copyright p,
+.copyright span,
+.copyright div {
+    color: #FFFFFF !important;
+}
+
+/* Ensure icons in green backgrounds are white */
+.feature-img {
+    color: var(--bs-white);
+}
+
+.feature-img i {
+    color: var(--bs-white) !important;
+}
+
+/* Override any remaining red and orange colors to black */
+.text-danger,
+.text-warning,
+.bg-danger,
+.bg-warning,
+.btn-danger,
+.btn-warning,
+.alert-danger,
+.alert-warning,
+.border-danger,
+.border-warning {
+    color: #000000 !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+/* Override any specific red/orange color values */
+[style*="red"],
+[style*="orange"],
+[style*="#ff"],
+[style*="#FF"],
+[style*="#dc3545"],
+[style*="#ffa500"],
+[style*="#ff0000"] {
+    color: #000000 !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+}
+
+/* Override Bootstrap's default red and orange colors */
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:focus,
+.btn-danger:active {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:focus,
+.btn-warning:active {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.text-danger {
+    color: #000000 !important;
+}
+
+.text-warning {
+    color: #000000 !important;
+}
+
+.bg-danger {
+    background-color: #000000 !important;
+}
+
+.bg-warning {
+    background-color: #000000 !important;
+}
+
+.alert-danger {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+.alert-warning {
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* Override any remaining color references */
+* {
+    color: inherit;
+}
+
+/* Ensure no red or orange colors appear anywhere */
+*:not(.text-white):not(.text-light):not(.text-muted):not(.navbar-brand h1 .speed):not(.navbar-brand h1 .ex):not(.footer):not(.footer *):not(.topbar):not(.topbar *):not(.counter):not(.counter *):not(.copyright):not(.copyright *) {
+    color: #000000 !important;
+}
+
+/* Override any Bootstrap utility classes that might use red/orange */
+.badge-danger,
+.badge-warning,
+.badge.bg-danger,
+.badge.bg-warning {
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 /*** Footer End ***/
 
@@ -982,11 +1223,20 @@
 }
 
 .navbar-brand h1 .speed {
-    color: #0052CC;
+    color: rgba(27,58,166,255) !important;
 }
 
 .navbar-brand h1 .ex {
-    color: #00A651;
+    color: rgba(42,180,114,255) !important;
+}
+
+/* Override text-secondary class for logo text */
+.navbar-brand h1.text-secondary .speed {
+    color: rgba(27,58,166,255) !important;
+}
+
+.navbar-brand h1.text-secondary .ex {
+    color: rgba(42,180,114,255) !important;
 }
 
 .navbar {

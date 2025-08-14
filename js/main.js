@@ -16,12 +16,12 @@
     new WOW().init();
 
 
-    // Sticky Navbar
+    // Sticky Navbar with blur effect
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
-            $('.sticky-top').addClass('shadow-sm').css('top', '0px');
+            $('.sticky-top').addClass('shadow-sm scrolled').css('top', '0px');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-200px');
+            $('.sticky-top').removeClass('shadow-sm scrolled').css('top', '-200px');
         }
     });
 
