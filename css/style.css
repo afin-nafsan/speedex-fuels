@@ -786,7 +786,8 @@
 .testimonial .owl-nav .owl-prev {
     position: absolute;
     top: -58px;
-    right: 0;
+    left: 50%;
+    transform: translateX(-60px);
     color: var(--bs-primary);
     padding: 5px 25px;
     border: 1px solid var(--bs-secondary);
@@ -801,7 +802,8 @@
 .testimonial .owl-nav .owl-next {
     position: absolute;
     top: -58px;
-    right: 88px;
+    left: 50%;
+    transform: translateX(10px);
     color: var(--bs-primary);
     padding: 5px 25px;
     border: 1px solid var(--bs-secondary);
@@ -871,6 +873,15 @@
     .testimonial .owl-nav .owl-prev,
     .testimonial .owl-nav .owl-next {
         top: -30px;
+        left: 50%;
+    }
+    
+    .testimonial .owl-nav .owl-prev {
+        transform: translateX(-60px);
+    }
+    
+    .testimonial .owl-nav .owl-next {
+        transform: translateX(10px);
     }
 }
 /*** testimonial End ***/
