@@ -503,44 +503,110 @@
 
 .about .about-item-image {
     position: relative;
-    background: var(--bs-light);
-    background-image: url(../img/about-bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: transparent;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about .about-item-image .img-1 {
-    margin-bottom: 250px; 
-    margin-right: 0;
-    border: 4px solid;
-    border-color: var(--bs-secondary) var(--bs-light) var(--bs-light) var(--bs-secondary);
-    z-index: 3;
-}
-
-.about .about-item-image .img-2 {
-    margin-top: 250px; 
-    margin-left: 0;
-    border: 4px solid;
-    border-color: var(--bs-light) var(--bs-secondary) var(--bs-secondary) var(--bs-light); 
-    z-index: 3;
-}
-
-.about .about-item-image::before {
-    width: 80%;
-    height: 80%;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid;
-    border-style: dotted;
-    border-color: var(--bs-white);
-    background: var(--bs-primary);
+.about .about-item-content {
+    position: relative;
     z-index: 2;
 }
+
+.about .about-item-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove old margin styles that were causing alignment issues */
+.about .about-item-image .img-1,
+.about .about-item-image .img-2 {
+    margin: 0;
+    border: none;
+    z-index: 3;
+}
+
+/* Responsive alignment for about section */
+@media (max-width: 991px) {
+    .about .row {
+        flex-direction: column;
+    }
+    
+    .about .col-xl-6 {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
+    .about .about-item-image {
+        margin-bottom: 2rem;
+    }
+    
+    .about .about-item-content {
+        text-align: center;
+    }
+}
+
+/* Mobile order change - text first, then image */
+@media (max-width: 768px) {
+    .about .row {
+        flex-direction: column-reverse;
+    }
+    
+    .about .col-lg-6:first-child {
+        order: 2;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .about .col-lg-6:last-child {
+        order: 1;
+        z-index: 2;
+        position: relative;
+    }
+    
+    .about .about-item-image {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        z-index: 1;
+        position: relative;
+    }
+    
+    .about .about-item-content {
+        margin-bottom: 2rem;
+        z-index: 2;
+        position: relative;
+    }
+    
+    /* Ensure heading appears first */
+    .about .about-item-content h2 {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .about .about-item-content p.text-uppercase {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .about .about-item-image img {
+        max-width: 90%;
+    }
+    
+    .about .about-item-content h2 {
+        font-size: 2rem;
+    }
+    
+    .about .about-item-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Removed overlay effect */
 
 .about .about-item-image .about-item-image-content {
     width: 55%;
@@ -642,12 +708,132 @@
 }
 
 .service .service-item:hover .service-content a.fs-4 {
-    color: var(--bs-white);
+    color: var(--bs-white) !important;
+    font-weight: bold !important;
     transition: 0.5s;
+}
+
+/* Make all product names white and bold on hover */
+.service .service-item:hover .service-content a,
+.service .service-item:hover .service-content h4,
+.service .service-item:hover .service-content h5,
+.service .service-item:hover .service-content .fs-4,
+.service .service-item:hover .service-content .d-block {
+    color: var(--bs-white) !important;
+    font-weight: bold !important;
 }
 
 .service .service-item:hover .service-content a.fs-4:hover {
     color: var(--bs-secondary);
+}
+
+.service .service-item:hover .service-content p {
+    color: var(--bs-white) !important;
+    font-weight: 500 !important;
+}
+
+/* Products page hover effects */
+.service-item.text-center.border:hover {
+    background: rgba(42, 180, 114, 0.9) !important;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+.service-item.text-center.border:hover h5 {
+    color: var(--bs-white) !important;
+    font-weight: bold !important;
+}
+
+/* Ensure all product names in products page are white and bold on hover */
+.service-item.text-center.border:hover h4,
+.service-item.text-center.border:hover h5,
+.service-item.text-center.border:hover a,
+.service-item.text-center.border:hover .mb-2,
+.service-item.text-center.border:hover h5.mb-2 {
+    color: var(--bs-white) !important;
+    font-weight: bold !important;
+}
+
+.service-item.text-center.border:hover p {
+    color: var(--bs-white) !important;
+    font-weight: 500 !important;
+}
+
+/* Ensure ALL text in product hover effects is white */
+.service-item.text-center.border:hover *,
+.service-item.text-center.border:hover span,
+.service-item.text-center.border:hover div,
+.service-item.text-center.border:hover small,
+.service-item.text-center.border:hover strong,
+.service-item.text-center.border:hover em {
+    color: var(--bs-white) !important;
+}
+
+/* Service page hover - ensure ALL text is white */
+.service .service-item:hover .service-content *,
+.service .service-item:hover .service-content span,
+.service .service-item:hover .service-content div,
+.service .service-item:hover .service-content small,
+.service .service-item:hover .service-content strong,
+.service .service-item:hover .service-content em {
+    color: var(--bs-white) !important;
+}
+
+/* Force ALL text in service hover to be white - highest priority */
+.service .service-item:hover .service-content,
+.service .service-item:hover .service-content a,
+.service .service-item:hover .service-content a.d-block,
+.service .service-item:hover .service-content a.fs-4,
+.service .service-item:hover .service-content a.my-4,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4 {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+}
+
+/* ULTIMATE FORCE - Override any conflicting styles for service hover text */
+.service .service-item:hover .service-content a,
+.service .service-item:hover .service-content a.d-block,
+.service .service-item:hover .service-content a.fs-4,
+.service .service-item:hover .service-content a.my-4,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:hover,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:focus,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:active {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+/* Force white color for ALL text elements in service hover */
+.service .service-item:hover .service-content *,
+.service .service-item:hover .service-content a *,
+.service .service-item:hover .service-content span,
+.service .service-item:hover .service-content div,
+.service .service-item:hover .service-content p,
+.service .service-item:hover .service-content h1,
+.service .service-item:hover .service-content h2,
+.service .service-item:hover .service-content h3,
+.service .service-item:hover .service-content h4,
+.service .service-item:hover .service-content h5,
+.service .service-item:hover .service-content h6 {
+    color: #FFFFFF !important;
+}
+
+/* MOST SPECIFIC RULE - Target the exact Diesel text element */
+.service .service-item:hover .service-content a.d-block.fs-4.my-4,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:hover,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:focus,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:active,
+.service .service-item:hover .service-content a.d-block.fs-4.my-4:visited {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
+    text-decoration: none !important;
+}
+
+/* Override any Bootstrap or other conflicting styles */
+.service .service-item:hover .service-content a.d-block.fs-4.my-4 {
+    color: #FFFFFF !important;
+    font-weight: bold !important;
 }
 
 .service .service-item .service-tytle {
@@ -1220,7 +1406,7 @@
 }
 
 /* Ensure no red or orange colors appear anywhere */
-*:not(.text-white):not(.text-light):not(.text-muted):not(.navbar-brand h1 .speed):not(.navbar-brand h1 .ex):not(.footer):not(.footer *):not(.topbar):not(.topbar *):not(.counter):not(.counter *):not(.copyright):not(.copyright *) {
+*:not(.text-white):not(.text-light):not(.text-muted):not(.navbar-brand h1 .speed):not(.navbar-brand h1 .ex):not(.footer):not(.footer *):not(.topbar):not(.topbar *):not(.counter):not(.counter *):not(.copyright):not(.copyright *):not(.service .service-item:hover .service-content):not(.service .service-item:hover .service-content *) {
     color: #000000 !important;
 }
 
