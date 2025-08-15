@@ -454,6 +454,46 @@
 }
 /*** Carousel End ***/
 
+/* Carousel responsive arrow sizing for mobile */
+@media (max-width: 768px) {
+    /* Smaller carousel arrows on mobile */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+    
+    .carousel-control-prev-icon i,
+    .carousel-control-next-icon i {
+        font-size: 1rem !important;
+    }
+    
+    /* Smaller green background square */
+    .carousel .carousel-control-prev .carousel-control-prev-icon,
+    .carousel .carousel-control-next .carousel-control-next-icon {
+        padding: 15px 20px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Even smaller carousel arrows on very small screens */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
+    
+    .carousel-control-prev-icon i,
+    .carousel-control-next-icon i {
+        font-size: 0.75rem !important;
+    }
+    
+    /* Even smaller green background square */
+    .carousel .carousel-control-prev .carousel-control-prev-icon,
+    .carousel .carousel-control-next .carousel-control-next-icon {
+        padding: 10px 15px !important;
+    }
+}
 
 /*** About Start ***/
 .about .about-item-content-img {
