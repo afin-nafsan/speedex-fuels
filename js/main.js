@@ -67,14 +67,25 @@
     });
 
 
-   // Back to top button
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-        $('.back-to-top').fadeIn('slow');
-    } else {
-        $('.back-to-top').fadeOut('slow');
-    }
-    });
+                               // Back to top button - only show when user reaches the testimonial area
+     $(window).scroll(function () {
+         var testimonialSection = $('#testimonial-section');
+         if (testimonialSection.length > 0) {
+             var testimonialOffset = testimonialSection.offset().top;
+             var scrollTop = $(this).scrollTop();
+             var windowHeight = $(this).height();
+             
+             // Show back-to-top button only when testimonial section is visible in viewport
+             if (scrollTop + windowHeight > testimonialOffset) {
+                 console.log('Showing back-to-top button');
+                 $('.back-to-top').fadeIn(500);
+             } else {
+                 console.log('Hiding back-to-top button');
+                 $('.back-to-top').fadeOut(500);
+             }
+         }
+     });
+    
     $('.back-to-top').click(function () {
         $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
         return false;

@@ -19,8 +19,27 @@
     position: fixed;
     right: 30px;
     bottom: 30px;
-    transition: 0.5s;
     z-index: 99;
+    display: block; /* Visible for testing */
+}
+
+/* Mobile responsive adjustments for back-to-top button */
+@media (max-width: 768px) {
+    .back-to-top {
+        right: 20px;
+        bottom: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 576px) {
+    .back-to-top {
+        right: 15px;
+        bottom: 15px;
+        width: 40px;
+        height: 40px;
+    }
 }
 
 /*** Button Start ***/
