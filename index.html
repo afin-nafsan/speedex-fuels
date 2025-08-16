@@ -211,7 +211,10 @@
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <div class="d-flex align-items-center flex-nowrap pt-3  pt-lg-0 ms-lg-2">
-                        <button class="btn btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                        <button class="btn btn-primary py-2 px-3 search-btn" data-bs-toggle="modal" data-bs-target="#searchModal" style="border-radius: 0; transition: all 0.3s ease;">
+                            <i class="fas fa-search me-1"></i>
+                            <span class="d-none d-md-inline">Search</span>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -222,20 +225,29 @@
         <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen">
                 <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search SpeedEX Products & Services</h4>
+                    <div class="modal-header border-0">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel" style="font-family: 'Roboto', sans-serif; font-weight: 600; color: var(--bs-primary);">
+                            <i class="fas fa-search me-2"></i>Search SpeedEX Products & Services
+                        </h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" id="searchInput" class="form-control p-3" placeholder="Search for diesel, gasoline, aviation fuel, crude oil..." aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        <div class="input-group w-75 mx-auto d-flex shadow-sm" style="border-radius: 0;">
+                            <input type="search" id="searchInput" class="form-control p-4" 
+                                   placeholder="Search for EN590 Diesel, gasoline, aviation fuel, crude oil, LPG, LNG..." 
+                                   aria-describedby="search-icon-1" 
+                                   style="border-radius: 0; font-family: 'Roboto', sans-serif; font-size: 1.1rem;">
+                            <span id="search-icon-1" class="input-group-text p-4" style="border-radius: 0; background-color: var(--bs-primary); color: white; cursor: pointer;">
+                                <i class="fa fa-search fa-lg"></i>
+                            </span>
                         </div>
                     </div>
-                    <div class="modal-footer">
+                    <div class="modal-footer border-0">
                         <div id="searchResults" class="w-100" style="display: none;">
-                            <h5 class="text-secondary mb-3">Search Results</h5>
-                            <div id="resultsList" class="list-group">
+                            <h5 class="text-secondary mb-3" style="font-family: 'Roboto', sans-serif; font-weight: 600;">
+                                <i class="fas fa-list me-2"></i>Search Results
+                            </h5>
+                            <div id="resultsList" class="list-group" style="border-radius: 0;">
                                 <!-- Search results will be populated here -->
                             </div>
                         </div>

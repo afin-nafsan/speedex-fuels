@@ -4,6 +4,21 @@
 
     // Search data - this contains all searchable content from the website
     const searchData = [
+        // EN590 Diesel Specialization
+        {
+            title: "EN590 Diesel 10 PPM",
+            description: "Premium EN590 Diesel 10 PPM - SpeedEX's specialized diesel fuel meeting highest international standards",
+            keywords: ["en590", "diesel", "10 ppm", "premium", "specialized", "emarat", "adnoc", "authorized"],
+            url: "index.html#diesel-specialization",
+            category: "Specialized Products"
+        },
+        {
+            title: "SpeedEX Diesel Specialization",
+            description: "Authorized supplier of EN590 Diesel 10 PPM by Emarat and Adnoc - UAE's leading fuel companies",
+            keywords: ["diesel specialization", "authorized supplier", "emarat", "adnoc", "uae", "premium"],
+            url: "index.html#diesel-specialization",
+            category: "Specialized Products"
+        },
         // Main Products from products.html
         {
             title: "CRUDE OIL",
@@ -216,6 +231,28 @@
             url: "blog.html",
             category: "News"
         },
+        // Blog Articles
+        {
+            title: "Global Fuel Market Trends 2025",
+            description: "Comprehensive analysis of global fuel market trends and what to expect in 2025",
+            keywords: ["global fuel market", "trends", "2025", "analysis", "market forecast"],
+            url: "blog-1.html",
+            category: "Blog"
+        },
+        {
+            title: "EN590 Diesel Standards",
+            description: "Understanding EN590 diesel standards and ensuring quality & performance",
+            keywords: ["en590", "diesel standards", "quality", "performance", "certification"],
+            url: "blog-2.html",
+            category: "Blog"
+        },
+        {
+            title: "Sustainable Fuel Solutions",
+            description: "SpeedEX's environmental commitment and sustainable fuel solutions",
+            keywords: ["sustainable", "environmental", "green fuel", "commitment", "eco-friendly"],
+            url: "blog-3.html",
+            category: "Blog"
+        },
         {
             title: "24/7 Global Operations",
             description: "Round-the-clock fuel supply and support worldwide",
@@ -243,6 +280,43 @@
             keywords: ["all products", "portfolio", "petroleum", "complete"],
             url: "products.html",
             category: "Products"
+        },
+        // Company Information Updates
+        {
+            title: "SpeedEX Fuel Trading LLC",
+            description: "Premier specialist in EN590 Diesel 10 PPM supply, authorized by Emarat and Adnoc",
+            keywords: ["speedex", "fuel trading", "llc", "premier", "specialist", "emarat", "adnoc"],
+            url: "about.html",
+            category: "Company"
+        },
+        {
+            title: "MyFuel Partnership",
+            description: "Strategic partnership between SpeedEX Fuel and MyFuel for comprehensive fuel solutions",
+            keywords: ["myfuel", "partnership", "strategic", "comprehensive", "solutions"],
+            url: "about.html",
+            category: "Company"
+        },
+        // Services and Features
+        {
+            title: "Global Supply Network",
+            description: "Extensive global supply network ensuring reliable fuel delivery worldwide",
+            keywords: ["global supply", "network", "worldwide", "delivery", "reliable"],
+            url: "index.html#about",
+            category: "Services"
+        },
+        {
+            title: "Premium Fuel Quality",
+            description: "International quality standards for all refined petroleum products",
+            keywords: ["premium", "quality", "international", "standards", "refined"],
+            url: "feature.html",
+            category: "Features"
+        },
+        {
+            title: "Environmental Responsibility",
+            description: "SpeedEX's commitment to environmental responsibility and sustainable practices",
+            keywords: ["environmental", "responsibility", "sustainable", "practices", "green"],
+            url: "feature.html",
+            category: "Features"
         }
     ];
 
@@ -253,17 +327,34 @@
         const resultsList = $('#resultsList');
         const searchIcon = $('#search-icon-1');
 
-        // Search on input
+        // Search on input with debouncing
+        let searchTimeout;
         searchInput.on('input', function() {
             const query = $(this).val().toLowerCase().trim();
+            
+            clearTimeout(searchTimeout);
             
             if (query.length < 2) {
                 searchResults.hide();
                 return;
             }
 
-            const results = performSearch(query);
-            displayResults(results);
+            // Add loading state
+            searchResults.show();
+            resultsList.html(`
+                <div class="text-center py-4">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Searching...</span>
+                    </div>
+                    <p class="mt-2 text-muted">Searching...</p>
+                </div>
+            `);
+
+            // Debounce search to improve performance
+            searchTimeout = setTimeout(() => {
+                const results = performSearch(query);
+                displayResults(results);
+            }, 300);
         });
 
         // Search on enter key
@@ -273,6 +364,28 @@
                 if (query.length >= 2) {
                     const results = performSearch(query);
                     displayResults(results);
+                }
+            }
+        });
+
+        // Keyboard navigation for search results
+        searchInput.on('keydown', function(e) {
+            const visibleResults = $('#resultsList .list-group-item:visible');
+            const currentIndex = visibleResults.index(visibleResults.filter(':focus'));
+            
+            if (e.which === 40) { // Down arrow
+                e.preventDefault();
+                if (currentIndex < visibleResults.length - 1) {
+                    visibleResults.eq(currentIndex + 1).focus();
+                } else {
+                    visibleResults.first().focus();
+                }
+            } else if (e.which === 38) { // Up arrow
+                e.preventDefault();
+                if (currentIndex > 0) {
+                    visibleResults.eq(currentIndex - 1).focus();
+                } else {
+                    visibleResults.last().focus();
                 }
             }
         });
@@ -344,25 +457,50 @@
         
         if (results.length === 0) {
             resultsList.append(`
-                <div class="alert alert-info">
+                <div class="alert alert-info" style="border-radius: 0; font-family: 'Roboto', sans-serif;">
                     <i class="fas fa-info-circle me-2"></i>
-                    No results found. Try searching for: diesel, gasoline, aviation fuel, crude oil, lpg, lng, lubricants, or any of our 25 petroleum products
+                    <strong>No results found.</strong> Try searching for: <strong>EN590 Diesel</strong>, gasoline, aviation fuel, crude oil, LPG, LNG, lubricants, or any of our 25 petroleum products
                 </div>
             `);
         } else {
+            // Group results by category
+            const groupedResults = {};
             results.forEach(result => {
-                const resultItem = `
-                    <a href="${result.url}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start" onclick="closeSearchModal()">
-                        <div class="ms-2 me-auto">
-                            <div class="fw-bold text-primary">${result.title}</div>
-                            <small class="text-muted">${result.description}</small>
-                            <br>
-                            <span class="badge bg-secondary rounded-pill">${result.category}</span>
-                        </div>
-                        <i class="fas fa-chevron-right text-muted"></i>
-                    </a>
-                `;
-                resultsList.append(resultItem);
+                if (!groupedResults[result.category]) {
+                    groupedResults[result.category] = [];
+                }
+                groupedResults[result.category].push(result);
+            });
+            
+            // Display grouped results
+            Object.keys(groupedResults).forEach(category => {
+                const categoryResults = groupedResults[category];
+                
+                // Add category header
+                resultsList.append(`
+                    <div class="mb-3">
+                        <h6 class="text-primary fw-bold mb-2" style="font-family: 'Roboto', sans-serif; border-bottom: 2px solid var(--bs-primary); padding-bottom: 5px;">
+                            <i class="fas fa-folder me-2"></i>${category} (${categoryResults.length})
+                        </h6>
+                    </div>
+                `);
+                
+                // Add results for this category
+                categoryResults.forEach(result => {
+                    const resultItem = `
+                        <a href="${result.url}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-start mb-2" 
+                           onclick="closeSearchModal()" 
+                           style="border-radius: 0; border-left: 4px solid var(--bs-primary); transition: all 0.3s ease; font-family: 'Roboto', sans-serif;">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-bold text-primary mb-1" style="font-size: 1.1rem;">${result.title}</div>
+                                <small class="text-muted mb-2 d-block" style="line-height: 1.4;">${result.description}</small>
+                                <span class="badge" style="background-color: var(--bs-primary); border-radius: 0; font-size: 0.8rem;">${result.category}</span>
+                            </div>
+                            <i class="fas fa-chevron-right text-muted ms-3" style="font-size: 1.2rem;"></i>
+                        </a>
+                    `;
+                    resultsList.append(resultItem);
+                });
             });
         }
         
