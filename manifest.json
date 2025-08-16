@@ -1,0 +1,25 @@
+{
+    "name": "SpeedEX Fuel Trading LLC",
+    "short_name": "SpeedEX",
+    "description": "Authorized supplier of EN590 Diesel 10 PPM in UAE. Premium petroleum products and fuel trading solutions.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#2ab472",
+    "theme_color": "#2ab472",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "img/speedex-logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/speedex-logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["business", "fuel", "energy"],
+    "lang": "en",
+    "dir": "ltr"
+}
