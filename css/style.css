@@ -33,6 +33,43 @@
     }
 }
 
+/* Premium Typography for Diesel Section */
+.premium-subtitle {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.premium-title {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.premium-content {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.premium-feature-title {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.premium-section-title {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.premium-card-title {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.premium-spec-value {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.premium-supplier-title {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.premium-supplier-name {
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
 @media (max-width: 576px) {
     .back-to-top {
         right: 15px;
