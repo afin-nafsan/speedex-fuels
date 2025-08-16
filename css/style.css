@@ -151,6 +151,20 @@
     transition: 1s;
 }
 
+/* Ensure header/navbar has sharp edges */
+.navbar,
+.navbar *,
+.container-fluid.topbar,
+.container-fluid.sticky-top,
+.topbar,
+.sticky-top {
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 /* Semi-transparent blur effect for navbar on scroll */
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.9) !important;
@@ -385,6 +399,26 @@
 /*** Single Page Hero Header End ***/
 
 /*** Carousel Start ***/
+/* Ensure carousel has sharp edges */
+.carousel,
+.carousel *,
+.carousel .carousel-inner,
+.carousel .carousel-inner *,
+.carousel .carousel-item,
+.carousel .carousel-item *,
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon,
+.carousel .carousel-indicators,
+.carousel .carousel-indicators * {
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 .carousel .carousel-inner .carousel-item {
     position: relative;
     overflow: hidden;
@@ -476,10 +510,20 @@
     border: 6px solid var(--bs-secondary);
     background: var(--bs-white);
     transition: 0.5s;
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .carousel .carousel-indicators li.active {
     border: 10px solid rgba(42,180,114,255);
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .carousel .carousel-control-prev,
@@ -492,7 +536,11 @@
     left: 0;
     padding: 25px 30px;
     background: rgba(42,180,114,255);
-
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .carousel .carousel-control-next .carousel-control-next-icon {
@@ -500,7 +548,11 @@
     right: 0;
     padding: 25px 30px;
     background: rgba(42,180,114,255);
-
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 .carousel .carousel-control-prev .carousel-control-prev-icon:hover,
@@ -517,6 +569,11 @@
     .carousel-control-next-icon {
         width: 2rem !important;
         height: 2rem !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
     
     .carousel-control-prev-icon i,
@@ -528,6 +585,11 @@
     .carousel .carousel-control-prev .carousel-control-prev-icon,
     .carousel .carousel-control-next .carousel-control-next-icon {
         padding: 15px 20px !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
 }
 
@@ -537,6 +599,11 @@
     .carousel-control-next-icon {
         width: 1.5rem !important;
         height: 1.5rem !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
     
     .carousel-control-prev-icon i,
@@ -548,6 +615,11 @@
     .carousel .carousel-control-prev .carousel-control-prev-icon,
     .carousel .carousel-control-next .carousel-control-next-icon {
         padding: 10px 15px !important;
+        border-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
 }
 
@@ -1265,6 +1337,19 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Ensure footer has sharp edges */
+.footer,
+.footer *,
+.container-fluid.footer,
+.container-fluid.copyright,
+.copyright {
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
 .footer .footer-item a {
     line-height: 35px;
     color: var(--bs-white);
@@ -1357,6 +1442,15 @@
 .footer .footer-item h3,
 .footer .footer-item h4,
 .footer .footer-item h5,
+
+/* Ensure all container-fluid elements have sharp edges */
+.container-fluid {
+    border-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
 .footer .footer-item h6 {
     color: #FFFFFF !important;
 }
