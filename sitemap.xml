@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -10,6 +11,26 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Fuel Trading LLC Logo</image:title>
+            <image:caption>Premium EN590 Diesel 10 PPM supplier in UAE</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/carousel-1.jpg</image:loc>
+            <image:title>SpeedEX Fuel Trading - Premium Diesel Solutions</image:title>
+            <image:caption>Professional fuel trading services for global markets</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/carousel-2.jpg</image:loc>
+            <image:title>EN590 Diesel 10 PPM - Ultra Low Sulfur</image:title>
+            <image:caption>High-quality diesel fuel meeting international standards</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/carousel-3.jpg</image:loc>
+            <image:title>Global Fuel Supply Network</image:title>
+            <image:caption>Reliable fuel delivery worldwide</image:caption>
+        </image:image>
     </url>
     
     <!-- About Page -->
@@ -18,6 +39,16 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Fuel Trading LLC</image:title>
+            <image:caption>Leading fuel trading company in UAE</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/about.jpg</image:loc>
+            <image:title>SpeedEX Fuel Trading Operations</image:title>
+            <image:caption>Professional fuel trading and supply services</image:caption>
+        </image:image>
     </url>
     
     <!-- Products Page -->
@@ -26,6 +57,11 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Products</image:title>
+            <image:caption>Premium petroleum products and fuel solutions</image:caption>
+        </image:image>
     </url>
     
     <!-- Services Page -->
@@ -34,6 +70,41 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Services</image:title>
+            <image:caption>Comprehensive fuel trading services</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/service-1.jpg</image:loc>
+            <image:title>Diesel Fuel Services</image:title>
+            <image:caption>High-quality diesel fuel for transportation and industrial use</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/service-2.jpg</image:loc>
+            <image:title>Crude Oil Supply</image:title>
+            <image:caption>Premium crude oil for refineries and processing</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/service-3.jpg</image:loc>
+            <image:title>Gasoline Products</image:title>
+            <image:caption>Premium gasoline fuels for automotive applications</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/service-4.jpg</image:loc>
+            <image:title>Aviation/Jet Fuel</image:title>
+            <image:caption>Specialized aviation fuels for aircraft operations</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/service-5.jpg</image:loc>
+            <image:title>Butane Supply</image:title>
+            <image:caption>High-quality butane for various applications</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/service-6.jpg</image:loc>
+            <image:title>Kerosene Products</image:title>
+            <image:caption>Premium kerosene for industrial and commercial use</image:caption>
+        </image:image>
     </url>
     
     <!-- Features Page -->
@@ -42,6 +113,11 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Features</image:title>
+            <image:caption>Why choose SpeedEX for your fuel needs</image:caption>
+        </image:image>
     </url>
     
     <!-- Blog Main Page -->
@@ -50,6 +126,26 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Blog</image:title>
+            <image:caption>Latest news and insights from SpeedEX</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/blog-1.jpg</image:loc>
+            <image:title>Fuel Market Trends</image:title>
+            <image:caption>Latest trends in the global fuel market</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/blog-2.jpg</image:loc>
+            <image:title>EN590 Diesel Standards</image:title>
+            <image:caption>Understanding EN590 diesel specifications</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/blog-3.jpg</image:loc>
+            <image:title>Sustainable Fuel Solutions</image:title>
+            <image:caption>Environmental responsibility in fuel trading</image:caption>
+        </image:image>
     </url>
     
     <!-- Blog Post 1 -->
@@ -58,6 +154,16 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Blog</image:title>
+            <image:caption>Fuel Market Trends Analysis</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/blog-1.jpg</image:loc>
+            <image:title>Fuel Market Trends 2024</image:title>
+            <image:caption>Comprehensive analysis of current fuel market trends</image:caption>
+        </image:image>
     </url>
     
     <!-- Blog Post 2 -->
@@ -66,6 +172,16 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Blog</image:title>
+            <image:caption>EN590 Diesel Standards Guide</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/blog-2.jpg</image:loc>
+            <image:title>EN590 Diesel Standards</image:title>
+            <image:caption>Complete guide to EN590 diesel specifications</image:caption>
+        </image:image>
     </url>
     
     <!-- Blog Post 3 -->
@@ -74,6 +190,16 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Blog</image:title>
+            <image:caption>Sustainable Fuel Solutions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/blog-3.jpg</image:loc>
+            <image:title>Sustainable Fuel Solutions</image:title>
+            <image:caption>Environmental responsibility in modern fuel trading</image:caption>
+        </image:image>
     </url>
     
     <!-- Testimonials Page -->
@@ -82,6 +208,11 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>SpeedEX Testimonials</image:title>
+            <image:caption>Client testimonials and success stories</image:caption>
+        </image:image>
     </url>
     
     <!-- Contact Page -->
@@ -90,6 +221,11 @@
         <lastmod>2024-12-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://speedexfuels.com/img/speedex-logo.png</image:loc>
+            <image:title>Contact SpeedEX</image:title>
+            <image:caption>Get in touch with SpeedEX Fuel Trading</image:caption>
+        </image:image>
     </url>
     
 </urlset>

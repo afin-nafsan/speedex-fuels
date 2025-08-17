@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://speedexfuels.com/sitemap.xml
+Sitemap: https://speedexfuels.com/image-sitemap.xml
 
 # Disallow admin or private areas (if any)
 Disallow: /admin/
