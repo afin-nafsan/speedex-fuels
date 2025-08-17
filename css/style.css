@@ -1922,6 +1922,76 @@
     }
 }
 
+/* Enhanced Tablet Centering for About Section */
+@media (max-width: 991px) and (min-width: 768px) {
+    /* Improved tablet centering for Global Reach and Quality Assured */
+    .about .row.g-3.justify-content-center {
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 20px !important;
+        margin: 0 auto !important;
+        max-width: 600px !important;
+    }
+    
+    .about .col-md-6 {
+        text-align: center !important;
+        margin-bottom: 0 !important;
+        flex: 1 !important;
+        max-width: 280px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
+    .about .text-center.p-3.bg-light.rounded {
+        margin: 0 auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 1.5rem !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        min-height: 120px !important;
+    }
+    
+    .about .text-center.p-3.bg-light.rounded i {
+        margin-bottom: 0.75rem !important;
+        display: block !important;
+    }
+    
+    .about .text-center.p-3.bg-light.rounded h6 {
+        margin-bottom: 0.5rem !important;
+        font-size: 1.1rem !important;
+        font-weight: 600 !important;
+    }
+    
+    .about .text-center.p-3.bg-light.rounded p {
+        margin: 0 !important;
+        font-size: 0.9rem !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+    }
+    
+    .about .d-flex.flex-wrap.gap-3.justify-content-center {
+        justify-content: center !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        margin-top: 2rem !important;
+        width: 100% !important;
+    }
+    
+    .about .btn {
+        width: auto !important;
+        min-width: 250px !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+}
+
 @media (max-width: 767px) {
     /* Mobile view - stack and center */
     .about .row.g-3.justify-content-center {
