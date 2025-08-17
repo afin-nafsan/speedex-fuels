@@ -1796,6 +1796,54 @@
     }
 }
 
+/* Enhanced Mobile Button Centering for Diesel Section */
+@media (max-width: 767px) {
+    /* Mobile view - improved button centering */
+    .diesel-specialization .mt-auto {
+        text-align: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        margin-top: 2rem !important;
+        width: 100% !important;
+    }
+    
+    .diesel-specialization .mt-auto .btn {
+        width: 100% !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+        display: block !important;
+        text-align: center !important;
+        padding: 12px 20px !important;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+    }
+    
+    .diesel-specialization .mt-auto .btn:first-child {
+        margin-bottom: 10px !important;
+    }
+    
+    .diesel-specialization .mt-auto .btn:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+    .diesel-specialization .mt-auto {
+        margin-top: 1.5rem !important;
+        gap: 12px !important;
+    }
+    
+    .diesel-specialization .mt-auto .btn {
+        max-width: 260px !important;
+        padding: 10px 16px !important;
+        font-size: 0.95rem !important;
+    }
+}
+
 /* About Section Responsive Styling */
 @media (max-width: 991px) and (min-width: 768px) {
     /* Tablet view - center Global Reach and Quality Assured boxes */
